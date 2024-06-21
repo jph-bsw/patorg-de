@@ -27,7 +27,12 @@ export function MobileHeader(props: {
           <div className="flex flex-col px-6 gap-4 py-4">
             {props.items &&
               props.items.map((e, i) => (
-                <Button variant={"outline"} className="rounded-lg" size={"lg"}>
+                <Button
+                  variant={"outline"}
+                  className="rounded-lg"
+                  size={"lg"}
+                  key={i}
+                >
                   {e.name}
                 </Button>
               ))}
